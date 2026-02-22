@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
         item.className = 'history-item';
 
         item.innerHTML = `
-            <div class="history-number">${number.toLocaleString()}</div>
+            <div class="history-number">${number}</div>
             <div class="history-meta">
                 <span>${timeStr}</span>
                 <span>${dateStr}</span>
@@ -183,12 +183,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Linear interpolation
             const currentValue = Math.floor(progress * (end - start) + start);
-            obj.innerHTML = currentValue.toLocaleString();
+            obj.innerHTML = currentValue;
 
             if (progress < 1) {
                 window.requestAnimationFrame(step);
             } else {
-                obj.innerHTML = end.toLocaleString(); // Ensure final value is exact
+                obj.innerHTML = end; // Ensure final value is exact
             }
         };
         window.requestAnimationFrame(step);

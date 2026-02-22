@@ -131,10 +131,13 @@ body {
 }
 
 .history-number {
-    font-weight: 700;
-    font-size: 1.25rem;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #ff0000;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
     font-variant-numeric: tabular-nums;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.2);
 }
 
 .history-meta {
@@ -205,16 +208,20 @@ body {
 }
 
 .number-display {
-    font-size: 12vw;
-    font-weight: 800;
-    color: var(--text-primary);
+    font-family: Arial, sans-serif;
+    font-size: 20vw;
+    font-weight: bold;
+    color: #ff4d4d;
     line-height: 1;
-    letter-spacing: -5px;
+    letter-spacing: 20px;
     font-variant-numeric: tabular-nums;
     margin-bottom: 1rem;
-    /* Strong glow for "brightness" */
-    text-shadow: 0 0 40px rgba(255, 255, 255, 0.3),
-        0 0 80px rgba(255, 255, 255, 0.1);
+    /* Extra strong glow for brighter numbers */
+    text-shadow:
+        0 0 20px rgba(255, 0, 0, 0.8),
+        0 0 40px rgba(255, 0, 0, 0.6),
+        0 0 80px rgba(255, 0, 0, 0.4),
+        0 0 120px rgba(255, 0, 0, 0.2);
 }
 
 .status-indicator {
